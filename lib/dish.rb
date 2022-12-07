@@ -1,18 +1,8 @@
 class Dish
-    attr_reader :name
+    attr_reader :name, :category
     
-    def initialize(name, category)
-        @name = name
-        @category = :category
-    end
-
-    def category
-        if :appetizer
-            :appetizer
-        elsif :entre
-            :entree
-        elsif :dessert
-            :dessert
-        end
+    def initialize(label, symbol)
+        @name = label
+        @category = symbol
     end
 end
